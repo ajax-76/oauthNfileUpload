@@ -18,7 +18,7 @@ in package.json -> file "start":cross-env NODE_ENV=production  node index.js
 
 # Example for Callback to Promise: Already been added to the project
 
-1. A Callback function 
+2. A Callback function into promise
 
 const compare_password =function (myPassword, hash, cb) {
      bcrypt.compare(myPassword, hash, function (err, IsMatch) {
