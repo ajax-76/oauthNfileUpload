@@ -1,0 +1,16 @@
+module.exports={
+    connectionstring:process.env.MONGO_URL,
+    database:process.env.MONGO_DATABASE,
+    facebook_client_id:process.env.FACEBOOK_CLIENT_ID,
+    server_port:process.env.SERVER_PORT,
+    facebook_clientSecret:process.env.FACEBOOK_CLIENT_SECRET,
+    facebook_callbackURL:process.env.FACEBOOK_CALLBACK_URL,
+    jwt_secret:process.env.JWT_SECRET,
+    saltrounds:process.env.SALT_ROUNDS,
+    google_client_id:process.env.GOOGLE_CLIENT_ID,
+    google_client_secret:process.env.GOOGLE_CLIENT_SECRET,
+    bucket_name:process.env.BUCKET_NAME,
+    space_access_id:process.env.SPACE_ACCESS_ID,
+    space_secret_key:process.env.SPACE_SECRET_KEY,
+    bucket_url:process.env.BUCKET_URL
+};

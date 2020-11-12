@@ -1,0 +1,24 @@
+{
+  "name": "fileuploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.725.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "json-2-csv": "^3.7.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.3",
+    "morgan": "^1.9.1",
+    "request": "^2.88.2"
+  }
+}

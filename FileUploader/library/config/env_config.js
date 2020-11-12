@@ -1,0 +1,11 @@
+module.exports={
+    connectionstring:process.env.MONGO_URL,
+    database:process.env.MONGO_DATABASE,
+    bucket_name:process.env.BUCKET_NAME,
+    space_access_id:process.env.SPACE_ACCESS_ID,
+    space_secret_key:process.env.SPACE_SECRET_KEY,
+    bucket_url:process.env.BUCKET_URL,
+    storage_name:process.env.STORAGE_NAME,
+    server_port:process.env.SERVER_PORT,
+    storage_url:process.env.STORAGE_URL
+};

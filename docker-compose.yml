@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+    auth_server:
+        build:
+            context: ./AuthServer
+            dockerfile: production.Dockerfile    
+        ports:
+            - "4001:4001"  
+        networks: 
+            - nodeapp-network-test
+    app_server:
+        build:
+            context: ./AppServer
+            dockerfile: production.Dockerfile
+        ports:
+            - "5001:5001"    
+        networks: 
+            - nodeapp-network-test
+    file-uploader:
+        build:
+            context: ./FileUploader
+            dockerfile: production.Dockerfile
+        ports:
+            - "6001:6001"    
+        networks: 
+            - nodeapp-network-test       
+    # node-client:
+    #     build:
+    #         context: ./qart_client/qart-client-v1
+    #         dockerfile: debug.Dockerfile
+    #     ports:
+    #         - "8081:8080"
+    #     networks: 
+    #         - nodeapp-network        
+    mongo:
+        image: mongo
+        ports:
+            - "27019:27017"
+        volumes:
+            - ./data/db:/data/db
+            - ./data/configdb:/data/configdb    
+        networks: 
+            - nodeapp-network-test
+
+
+# networks:
+#     nodeapp-network-hash:
+#         driver: bridge
+
+# with replicaset
+
+ 
+
+
+networks:
+    nodeapp-network-test:
+        driver: bridge
