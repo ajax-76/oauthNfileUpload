@@ -11,6 +11,9 @@ var get_db_collection =function(){
     return {
         userdb:function(){
            return dbo.collection("OAUTH_USER");
+        },
+        request_logger:function(){
+            return dbo.collection("REQUEST_LOGGER");
         }
     }
 }();

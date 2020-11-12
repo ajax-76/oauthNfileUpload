@@ -14,7 +14,9 @@ var user_model=function(){
                     refresh_token:"",
                     access_token:""
                     //resume:{otp_password_token:data.otp!=undefined?bcrypt.hashSync(data.otp,saltrounds):"",otp_password_expires:data.otp_password_expires!=undefined?data.otp_password_expires:""}
-                }
+                },
+                createdAt:new Date(),
+                updatedAt:new Date()
             }
             //console.log(user,"create2")
             var create_response =await new Promise((resolve,reject)=>{
@@ -41,7 +43,9 @@ var user_model=function(){
             _id:data._id,
             user_name:data.user_name,
             //password:data.password,
-            services:data.services
+            services:data.services,
+            createdAt:data.createdAt,
+            updatedAt:new Date()
             // services:{
             //     password:{brcypt:data.password!=undefined?bcrypt.hashSync(data.password, saltRounds):""},
             //     resume:{otp_password_token:data.otp!=undefined?bcrypt.hashSync(data.otp,saltrounds):"",otp_password_expires:data.otp_password_expires!=undefined?data.otp_password_expires:""}
