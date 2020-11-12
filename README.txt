@@ -62,5 +62,5 @@ const res =new Promise((resolve,reject)=>{
 })
 
 Project Done :
-2. OAUTH with JWT and refresh token
+2. OAUTH , JWT and refresh token
 3. Data upload as file in cloud with returned url for download 
